@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test page</title>
+	<script type="text/javascript">
+		var min=12; var max=36; 
+		function increaseFontSize() {
+			var div = document.getElementsByTagName('div')[0],
+			fontSize = parseFloat(div.style.fontSize);
+			div.style.fontSize = Math.min(max, fontSize + 2) + "px"; 
+		} 
+		
+		function decreaseFontSize() {
+			var div = document.getElementsByTagName('div')[0],
+			fontSize = parseFloat(div.style.fontSize);
+			div.style.fontSize = Math.max(min, fontSize - 2) + "px";
+		}
+	</script>
+</head>
+<body>
+	<video id="myVideo" width="100%" height="100%" style="background:#333" poster="https://www.ricoh.com/r_dc/r/r8/img/sample_08.jpg">
+		<source src="http://des.byegm.gov.tr/doc_path_3/BBC_WORLD_NEWS_TV/EKLENTI_ARSIVI/2015/2/10/13131358_media.mp4" type="video/mp4">
+	</video>
+	<script> 
+		var vid = document.getElementById("myVideo"); 
+		
+		function playVid() { 
+		    myVideo.play(); 
+		} 
+		
+		function pauseVid() { 
+		    myVideo.pause(); 
+		} 
+	</script> 
+	<script> 
+		var vid = document.getElementById("myVideo");
+		function pauseVid() { 
+		    myVideo.pause(); 
+		} 
+	</script> 
+	<h1 style="margin:0px 0px 0px 0px; padding:0">Baslik</h1>
+	<font color="#777777">alt baslik 1<br><i>alt baslik 2</i></font>
+	<br><br><br>
+	<div style="font-size: 12px">
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	<br><br>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	<br><br>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</div>
+</body>
+</html>
